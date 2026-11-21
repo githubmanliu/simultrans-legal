@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline Interpreter — Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; }
+body { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
+       font: 16px/1.75 -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; }
+h1 { font-size: 26px; margin: 0 0 24px; }
+h2 { font-size: 19px; margin: 32px 0 10px; padding-top: 8px; }
+h3 { font-size: 17px; margin: 24px 0 8px; }
+p, li { color: #333; }
+@media (prefers-color-scheme: dark) { p, li { color: #ccc; } }
+hr { border: none; border-top: 1px solid #8884; margin: 32px 0; }
+table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 15px; }
+th, td { border: 1px solid #8884; padding: 8px 10px; text-align: left; }
+th { background: #8881; }
+ul { padding-left: 22px; }
+strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Offline Interpreter — Privacy Policy</h1>
+<p><strong>Effective date: November 20, 2026</strong></p>
+<p>Offline Interpreter is a real-time interpreting app for iPad and Mac. It listens to meetings, talks and lectures, shows bilingual subtitles on screen, and keeps a transcript.</p>
+<p>The most important line first: <strong>your audio never leaves your device.</strong> Speech recognition and translation run on-device by default, work without a network, require no account, and never touch a server of ours.</p>
+<hr>
+<h2>1. What we collect</h2>
+<h3>By default (free tier, the ¥18 Unlimited tier, and any time Cloud Boost is off)</h3>
+<p>We collect nothing:</p>
+<ul><li>No account. No sign-up, no email, phone number or name required.</li><li>No ads, no third-party ad SDKs.</li><li>No analytics, no behavioural tracking.</li><li>No crash reporting, no device fingerprinting.</li><li>No access to contacts, location, camera, photo library or calendar.</li></ul>
+<p>The only permission the app asks for is the <strong>microphone</strong>. When you press record, the app reads the live audio stream. The audio exists only in device memory and inside the app&#x27;s sandbox. It never leaves the device.</p>
+<h3>When you use Cloud Boost (subscription tiers / Full unlock)</h3>
+<p>Cloud Boost is optional, off by default, and requires you to configure your own model service. When it is on:</p>
+<li>**What is sent**: only the **translated text**, plus the meeting background and glossary you typed, plus the last few segments of context. **Audio is never sent.**</li><li>**Where it goes**: to the service endpoint **you** entered — a cloud provider (DeepSeek, Qwen, Zhipu, etc.) or a model server running on your own LAN (llama.cpp, LM Studio, Ollama). You choose the destination, not us.</li><li>**Who pays**: the model service is yours. We never handle, pay for or store your API key — it lives in your device&#x27;s system Keychain.</li><li>**We are not in the path**: requests go directly from your device to the endpoint you configured. No server of ours is involved.</li>
+<p><strong>If you never turn on Cloud Boost, this app does not send a single byte over the network.</strong></p>
+<hr>
+<h2>2. How information is used</h2>
+<p>The app uses microphone audio locally only, for three things: turning speech into text, translating that text, and showing it as subtitles. Transcripts are stored on your device for you to read and export.</p>
+<p>We do not view or analyse this content — it never reaches us.</p>
+<hr>
+<h2>3. Where data is stored</h2>
+<li>**Recordings and transcripts**: inside the app&#x27;s own sandbox on your device.</li><li>**Exported files**: wherever you choose to save or share them. The app never sends them anywhere on its own.</li><li>**Model files**: the speech-recognition and translation models (about 2.6 GB) ship inside the app. **Nothing is downloaded on first launch**, and no network is required.</li><li>**API keys** (Cloud Boost only): in your device&#x27;s system Keychain.</li><li>**Purchase records**: handled by Apple&#x27;s App Store. We cannot see your payment details.</li>
+<p>We keep no server-side backup. The data is not in our hands, and we cannot recover it for you — deleting it deletes it.</p>
+<hr>
+<h2>4. What we never do</h2>
+<li>Upload microphone audio.</li><li>Transmit your recordings, transcripts, subtitles or translations over the network (Cloud Boost sends translated text only, and only when you turn it on).</li><li>Use any content for model training.</li><li>Sell, trade or share your data — we do not have it.</li><li>Show ads or build user profiles.</li>
+<hr>
+<h2>5. About the microphone permission</h2>
+<p>The app requests microphone access so that, when you press record, it can capture live speech and turn it into text and subtitles.</p>
+<li>Access is only active while recording. Once you stop, the microphone is released.</li><li>When not recording, the app does not start the microphone.</li><li>Audio is never written to the cloud or synced to other devices.</li><li>If you deny the permission, the app still opens — it just can&#x27;t start transcribing.</li>
+<p>The app also uses the system speech-recognition capability as a helper. That runs on-device too; audio is not uploaded because of it.</p>
+<hr>
+<h2>6. In-app purchases</h2>
+<p>The app offers the following paid options (all through Apple&#x27;s App Store in-app purchase):</p>
+<table>
+<tr><th>Tier</th><th>What you get</th></tr>
+<tr><td>Free</td><td>30 minutes per day</td></tr>
+<tr><td>¥18 Unlimited</td><td>Unlimited time + all four languages + glossary</td></tr>
+<tr><td>¥12 / month</td><td>Everything above + Cloud Boost (cloud translation and meeting summaries)</td></tr>
+<tr><td>¥98 / year</td><td>Same, billed annually</td></tr>
+<tr><td>¥198 Full unlock</td><td>Cloud Boost paid once, no monthly fee afterwards</td></tr>
+</table>
+<li>Payment is handled by Apple. We never see or store your card or billing details.</li><li>Subscriptions renew automatically. Cancel anytime under Settings → Apple ID → Subscriptions.</li><li>Refunds follow Apple&#x27;s policy.</li>
+<hr>
+<h2>7. Third-party components</h2>
+<p>The AI components bundled with the app (Qwen3-ASR for recognition, Hy-MT2 for translation) and the inference frameworks that run them ship inside the app and run fully offline.</p>
+<p>Open-source components (llama.cpp, Silero VAD, ONNX Runtime and others) are used under their respective licences.</p>
+<hr>
+<h2>8. Children&#x27;s privacy</h2>
+<p>Offline Interpreter is a meeting tool. It is not designed for children and collects no one&#x27;s information. We build no profiles, and a child using the app produces no data for us to collect.</p>
+<p>If a parent has a question about their child&#x27;s use, please email us using the address below.</p>
+<hr>
+<h2>9. Your rights</h2>
+<p>Because the data lives on your device, you stay in control:</p>
+<li>**Access**: view every record inside the app at any time.</li><li>**Export**: export to text or documents, saved wherever you like.</li><li>**Delete**: delete individual or all records in the app, or delete the app itself — the sandbox goes with it.</li><li>**Revoke permission**: turn off microphone access anytime in Settings → Privacy &amp; Security → Microphone.</li><li>**Delete API keys**: remove a model in the app&#x27;s model manager and the Keychain entry is erased with it.</li>
+<p>We will not contact you, and we will not treat you differently for exercising these rights — you never gave us your data.</p>
+<hr>
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, we will update it here and revise the effective date above. Changes usually come from feature updates. The app&#x27;s core principle — everything stays on your device — will not change.</p>
+<hr>
+<h2>11. Contact</h2>
+<p>Questions, suggestions, or something written incorrectly — just write:</p>
+<li>**Email**: wsfk2888@163.com</li><li>**Developer**: independent developer, Beijing, China</li>
+<p>We read every message.</p>
+<hr>
+<p>*This policy applies to both the iPadOS and macOS versions of Offline Interpreter.*</p>
+</body>
+</html>
